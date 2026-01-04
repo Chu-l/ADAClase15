@@ -16,7 +16,7 @@ console.log("Lista de invitados actualizada: " + invitados);
 */
 /*** Ejercicio 3: Agregar y eliminar a la fila de mascotas
 Tienes una fila de mascotas en una clínica veterinaria ["Perro", "Gato", "Conejo"]. Llega un "Hámster" que debe ser atendido primero. Agrega el "Hámster" al inicio de la lista. Luego, atiende a la primera mascota de la fila y muéstrala. Finalmente, muestra la lista actualizada. ***/
-
+/*
 let mascotas = ["Perro", "Gato", "Conejo"];
 // Agrego al Hámster al inicio
 mascotas.unshift("Hámster");
@@ -24,3 +24,10 @@ mascotas.unshift("Hámster");
 let mascotaAtendida = mascotas.shift();
 console.log("Asistido de urgencia: " + mascotaAtendida);
 console.log("Lista de mascotas actualizada: " + mascotas);
+*/
+/*** Ejercicio 4: Convertir una lista de palabras en una frase
+Tienes un array de palabras ["JavaScript", "es", "divertido"]. Une todas las palabras en una sola frase, separadas por un espacio, y muestra el resultado. ***/
+
+let palabras = ["JavaScript", "es", "divertido"];
+let frase = palabras.join(' ');
+console.log(frase);
