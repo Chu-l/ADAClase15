@@ -27,7 +27,13 @@ console.log("Lista de mascotas actualizada: " + mascotas);
 */
 /*** Ejercicio 4: Convertir una lista de palabras en una frase
 Tienes un array de palabras ["JavaScript", "es", "divertido"]. Une todas las palabras en una sola frase, separadas por un espacio, y muestra el resultado. ***/
-
+/*
 let palabras = ["JavaScript", "es", "divertido"];
 let frase = palabras.join(' ');
 console.log(frase);
+*/
+/*** Ejercicio 5: Buscar la posición de un elemento
+Tienes una lista de colores ["Rojo", "Verde", "Azul", "Amarillo"]. Encuentra y muestra el índice del color "Azul" en la lista. ***/
+
+let colores = ["Rojo", "Verde", "Azul", "Amarillo"];
+console.log(`Índice del color azul: ${colores.indexOf("Azul")}`);
