@@ -46,10 +46,16 @@ console.log(`Índice de la última posición en la que aparece el número 7: ${n
 */
 /*** Ejercicio 7: Verificar si una lista contiene un elemento
 Tienes una lista de comidas ["Pizza", "Hamburguesa", "Tacos"]. Verifica si "Sushi" está en la lista y muestra un mensaje que confirme si está o no. ***/
-
+/*
 let comidas = ["Pizza", "Hamburguesa", "Tacos"];
 if (comidas.includes("Sushi")) {
   console.log("Sushi está en la lista");
 } else {
   console.log("Sushi no está en la lista");
 }
+*/
+/*** Ejercicio 8: Extraer una parte de una frase
+Tienes la frase "Los gatos son geniales". Extrae y muestra solo la parte "gatos" utilizando el método adecuado. ***/
+
+let frase = "Los gatos son geniales";
+console.log(frase.slice(4,9));
