@@ -34,6 +34,14 @@ console.log(frase);
 */
 /*** Ejercicio 5: Buscar la posición de un elemento
 Tienes una lista de colores ["Rojo", "Verde", "Azul", "Amarillo"]. Encuentra y muestra el índice del color "Azul" en la lista. ***/
-
+/*
 let colores = ["Rojo", "Verde", "Azul", "Amarillo"];
 console.log(`Índice del color azul: ${colores.indexOf("Azul")}`);
+*/
+/*** Ejercicio 6: Buscar la última posición de un elemento repetido
+Tienes una lista de números [2, 5, 7, 2, 8, 7]. Encuentra y muestra la última posición en la que aparece el número 7. ***/
+
+let num = [2, 5, 7, 2, 8, 7];
+console.log(`Índice de la última posición en la que aparece el número 7: ${num.lastIndexOf(7)}`);
+
+
