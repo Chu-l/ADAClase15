@@ -40,8 +40,16 @@ console.log(`Índice del color azul: ${colores.indexOf("Azul")}`);
 */
 /*** Ejercicio 6: Buscar la última posición de un elemento repetido
 Tienes una lista de números [2, 5, 7, 2, 8, 7]. Encuentra y muestra la última posición en la que aparece el número 7. ***/
-
+/*
 let num = [2, 5, 7, 2, 8, 7];
 console.log(`Índice de la última posición en la que aparece el número 7: ${num.lastIndexOf(7)}`);
+*/
+/*** Ejercicio 7: Verificar si una lista contiene un elemento
+Tienes una lista de comidas ["Pizza", "Hamburguesa", "Tacos"]. Verifica si "Sushi" está en la lista y muestra un mensaje que confirme si está o no. ***/
 
-
+let comidas = ["Pizza", "Hamburguesa", "Tacos"];
+if (comidas.includes("Sushi")) {
+  console.log("Sushi está en la lista");
+} else {
+  console.log("Sushi no está en la lista");
+}
