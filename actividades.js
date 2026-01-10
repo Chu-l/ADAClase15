@@ -64,6 +64,12 @@ console.log(frase.slice(4,9));
 Tienes la siguiente cadena con espacios adicionales 
 "    Hola, mundo!    "
 Elimina los espacios al inicio y al final y muestra la cadena resultante. ***/
-
+/*
 let frase = "    Hola, mundo!    ";
 console.log(frase.trim());
+*/
+/*** Ejercicio 10: Reemplazar una palabra en una frase
+Tienes la frase "Me gusta el invierno". Cambia la palabra "invierno" por "verano" y muestra la frase actualizada.***/
+
+let frase = "Me gusta el verano";
+console.log(frase.replace('verano','invierno'));
