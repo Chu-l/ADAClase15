@@ -70,6 +70,93 @@ console.log(frase.trim());
 */
 /*** Ejercicio 10: Reemplazar una palabra en una frase
 Tienes la frase "Me gusta el invierno". Cambia la palabra "invierno" por "verano" y muestra la frase actualizada.***/
-
+/*
 let frase = "Me gusta el verano";
 console.log(frase.replace('verano','invierno'));
+//soy team invierno profe :D
+*/
+
+//***** Ejercicios Extra *****
+
+/* Gestión de inventario de una tienda
+Eres encargado de una tienda y tienes un inventario inicial de productos. La lista de productos es:
+let inventario = ["Laptop", "Teclado", "Mouse", "Monitor"];
+Debes realizar las siguientes acciones:
+1.	Agregar un nuevo producto "Impresora" al inventario usando el método adecuado.
+2.	Comprobar si "Tablet" está en el inventario y mostrar un mensaje adecuado.
+3.	Eliminar el primer producto del inventario.
+4.	Mostrar la lista actualizada de productos en una sola cadena, separados por comas.*/
+/*
+let inventario = ["Laptop", "Teclado", "Mouse", "Monitor"];
+//Agregar un nuevo producto "Impresora"
+inventario.push("Impresora");
+//Comprobar si "Tablet" está en el inventario
+if (inventario.includes("Tablet")) {
+    console.log("Tablet está en el inventario.");
+} else {
+    console.log("Tablet no está en el inventario.");
+}
+//Eliminar el primer producto
+inventario.shift();
+//Mostrar la lista actualizada
+let inventarioFinal = inventario.join(", ");
+console.log("Inventario actual:", inventarioFinal);
+*/
+
+/* Clasificación de palabras según su longitud
+Tienes una lista de palabras en una oración. Debes:
+1.	Dividir la oración en palabras individuales.
+2.	Clasificar las palabras en dos categorías:
+▪	Cortas (menos de 5 letras)
+▪	Largas (5 letras o más)
+3.	Mostrar ambas listas de palabras clasificadas.
+4.	La oración es: "JavaScript es un lenguaje poderoso y versátil".*/
+/*
+let oracion = "JavaScript es un lenguaje poderoso y versátil";
+
+// Divido la oración en palabras
+let palabras = oracion.split(" ");
+
+let cortas = []; //<5 letras
+let largas = []; //>=5 letras
+
+// Clasifico las palabras según longitud
+for (let i = 0; i < palabras.length; i++) {
+    if (palabras[i].length < 5) {
+        cortas.push(palabras[i]);
+    } else {
+        largas.push(palabras[i]);
+    }
+}
+
+// Muestro las listas
+console.log("Palabras cortas:", cortas);
+console.log("Palabras largas:", largas);
+*/
+
+/* Simulador de una cola de atención al cliente
+Simula una cola de atención al cliente donde los clientes llegan y son atendidos uno por uno. Tienes una lista inicial de clientes en espera y un bucle que los atiende de a uno. Realiza lo siguiente:
+1.	Mientras haya clientes en la cola, atiende a cada uno y muéstralo por consola.
+2.	Si el nombre del cliente es "VIP", muéstralo con prioridad indicando un mensaje especial.
+3.	Al final, muestra cuántos clientes fueron atendidos en total.
+Lista inicial de clientes: ["Ana", "Carlos", "VIP", "Sofía", "Juan"].*/
+
+let clientes = ["Ana", "Carlos", "VIP", "Sofía", "Juan"];
+let totalAtendidos = 0; //contador
+
+while (clientes.length > 0) {
+
+    // Atender al primer cliente de la cola
+    let cliente = clientes.shift();
+
+    // Verificar si es VIP
+    if (cliente === "VIP") {
+        console.log(`***Cliente VIP atendido con prioridad***`);
+    } else {
+        console.log("Cliente atendido:", cliente);
+    }
+
+    totalAtendidos++;
+}
+
+console.log("Total de clientes atendidos:", totalAtendidos);
